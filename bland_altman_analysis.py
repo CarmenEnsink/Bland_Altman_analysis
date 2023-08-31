@@ -14,7 +14,7 @@ bland_altman_analysis(..., **kwargs)
     'Markersize'   Markersize of data points.
                    Defaults to 15.   
     'Alpha'        Color density of the data points.
-                   Defaults to 0.25.
+                   Defaults to 0.5.
     'Linewidth'    Linewidth of the mean and std plot.
                    Defaults to 3.  
     'Capsize'      Capsize of the mean and std plot. 
@@ -43,7 +43,7 @@ Copyright (c)   2023, Carmen Ensink, Sint Maartenksliniek,
 import numpy as np
 import matplotlib.pyplot as plt
 
-def bland_altman_plot(data_reference=False, data_new=False, **kwargs):
+def bland_altman_analysis(data_reference=False, data_new=False, **kwargs):
     
     # Input errors
     if type(data_reference) == bool or type(data_new) == bool:
@@ -54,7 +54,7 @@ def bland_altman_plot(data_reference=False, data_new=False, **kwargs):
     # Defaults
     Color = 'black'
     Markersize = 15
-    Alpha = 0.25
+    Alpha = 0.5
     Linewidth = 3
     Capsize = 15
     XLabel = 'Mean reference data, new data'
