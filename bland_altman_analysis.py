@@ -12,9 +12,9 @@ bland_altman_analysis(..., **kwargs)
     'Color'        Color of the data points. 
                    Defaults to black. 
     'Markersize'   Markersize of data points.
-                   Defaults to 15.   
+                   Defaults to 50.   
     'Alpha'        Color density of the data points.
-                   Defaults to 0.5.
+                   Defaults to 0.6.
     'Linewidth'    Linewidth of the mean and std plot.
                    Defaults to 3.  
     'Capsize'      Capsize of the mean and std plot. 
