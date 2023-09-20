@@ -112,16 +112,16 @@ def bland_altman_analysis(data_reference=False, data_new=False, **kwargs):
     plt.axhline(mean_difference - 1.96*sd_difference, color='gray', linestyle='--', linewidth=Linewidth)
     
     if Labels == True:
-        plt.text(np.nanmax(mean), mean_difference, mean_diff_string, fontsize=Fontsize-6) 
-        plt.text(np.nanmax(mean), mean_difference + 1.96*sd_difference, UB_string, fontsize=Fontsize-6) 
-        plt.text(np.nanmax(mean), mean_difference - 1.96*sd_difference, LB_string, fontsize=Fontsize-6) 
+        plt.text(np.nanmax(mean), mean_difference, mean_diff_string, fontsize=Fontsize-8) 
+        plt.text(np.nanmax(mean), mean_difference + 1.96*sd_difference, UB_string, fontsize=Fontsize-8) 
+        plt.text(np.nanmax(mean), mean_difference - 1.96*sd_difference, LB_string, fontsize=Fontsize-8) 
         
     plt.xlabel(XLabel, fontsize=Fontsize-6)
     plt.ylabel(YLabel, fontsize=Fontsize-6) #Difference between measures
     
-    plt.xticks(fontsize=Fontsize-6)    
-    plt.yticks(fontsize=Fontsize-6)
-    plt.legend(fontsize=Fontsize-6)  
+    plt.xticks(fontsize=Fontsize-8)    
+    plt.yticks(fontsize=Fontsize-8)
+    plt.legend(fontsize=Fontsize-8)  
     
     plt.show()
         
