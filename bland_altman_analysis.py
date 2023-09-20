@@ -53,8 +53,8 @@ def bland_altman_analysis(data_reference=False, data_new=False, **kwargs):
     
     # Defaults
     Color = 'black'
-    Markersize = 15
-    Alpha = 0.5
+    Markersize = 50
+    Alpha = 0.6
     Linewidth = 3
     Capsize = 15
     XLabel = 'Mean reference data, new data'
